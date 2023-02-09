@@ -11,7 +11,6 @@ def uniform_cost_search(goal, start):
         queue = sorted(queue)
         p = queue[-1]
 
-        # pop the element
         del queue[-1]
         p[0] *= -1
         if (p[1] in goal):
